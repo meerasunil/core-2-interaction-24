@@ -1,0 +1,17 @@
+body { 
+    background-color: tan;
+    position: fixed;
+}
+@font-face { 
+    font-family: 'typefesse'; 
+     src: url('/studio/demos/type-demo/Typefesse_Claire-Obscure.otf') format('otf'); 
+}
+h1 {
+font-family: 'typefesse';
+font-size: 10.5rem;
+filter: blur(.07rem);
+line-height: 100px;
+padding-top: 10rem;
+color: rgb(54, 50, 50);
+text-decoration: dashed underline 3px rgb(149, 88, 14);
+}
