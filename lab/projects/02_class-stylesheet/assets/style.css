@@ -1,3 +1,47 @@
 html {
+    background-color: rgb(196, 245, 206);
+    filter: blur(.02rem);
+
+}
+h2 {
+    color: black;
+    text-align: right;
+    border: 4px dashed black;
+}
+h3{ 
     color: purple;
+    border: 4px dashed black;
+}
+h4{ 
+    color: rgb(10, 34, 10);
+    text-align: center;
+    border: 4px dashed black;
+
+}
+@font-face {
+    font-family:'Combat';
+    src: url(./Combat.otf) format('otf');
+    
+}
+h1 {
+    font-family: Combat;
+    color: rgb(194, 149, 45);
+    border: 4px dashed black;
+    text-align: right;
+}
+p{
+    text-align: center;
+    line-height: 50px;
+    text-decoration: dotted underline;
+}
+header {
+    text-align: left;
+    border: black 4px dashed;
+}
+ol { font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+ul {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
