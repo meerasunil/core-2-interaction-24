@@ -1,0 +1,61 @@
+html { 
+    background-color: blue;
+    color: orange;
+}
+.MainHeader { 
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+h1, h2, p{ 
+    margin: 0;
+}
+.Part { 
+background-color: red;
+padding: 10px;
+border: 1px solid black;
+margin: 50px 0px 50px 0px;
+}
+
+#PartFive {
+    background-color: antiquewhite;
+
+}
+body { 
+    max-width: 600px;
+    margin: auto;
+    background-color: green;
+}
+
+img, video, audio, object {
+    width: 100%;
+    margin-top: 10px;
+}
+object { 
+    aspect-ratio: 4/3;
+}
+.Nav a {
+    color: violet; 
+    text-decoration: none;
+}
+.Nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.Nav-list{
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+.Nav-item { 
+    display: inline-block;
+    background: black;
+    padding: 5px;
+}
+
+/*blocks stack on top of each other. 
+blocks automatically take up the whole width of the page. 
+inline elements wrap and take up the space they need.*/ 

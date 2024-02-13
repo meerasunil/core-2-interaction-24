@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    background-color: gray;
+    height: 90vh;
+    width: 160px;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    color: black;
+    font-family:'IMFell Great Primer';
+    font-size: 1.25rem;
+    color: azure;
+    filter: blur(.015rem);
+    overflow-y: auto;
+    z-index: 1;
+}
+
+  
+  .content {
+    font-family: 'Averia Serif Libre';
+    font-size: 1rem; 
+    text-align: center;
+    color: rgb(6, 5, 5);
+    filter: blur(.02rem);
+    margin-left: calc (100vw - 160px);
+
+  }
+  
+  button {
+    font-family: 'IMFell Great Primer'; 
+
+  }
+  
+  @font-face {
+    font-family: IMFell Great Primer;
+    src: url(./IMFellGreatPrimer-Regular.ttf);
+}
+@font-face {
+    font-family: Averia Serif Libre;
+    src: url(./AveriaSerifLibre-Regular.ttf);
+}
