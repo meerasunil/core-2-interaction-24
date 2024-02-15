@@ -22,7 +22,7 @@
     text-align: center;
     color: rgb(6, 5, 5);
     filter: blur(.02rem);
-    margin-left: calc (100vw - 160px);
+    margin-left: 160px;
 
   }
   
