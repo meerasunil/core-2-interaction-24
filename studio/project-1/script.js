@@ -1,3 +1,4 @@
+var selectedTexts = [];
 const chapterTexts = {
     '1.1': 'By this art you may contemplate the variations of the 23 letters...',
     '1.2': 'The Anatomy of Melancholy, part 2, sect. II, mem. IV',
@@ -104,40 +105,40 @@ const chapterTexts = {
     '12.13':'books whose format is smaller than usual, all-powerful, illustrated and magical. ',
     '13.1': 'We also know of another superstition of that time:',
     '13.2': 'that of the Man of the Book.',
-    '13.3': '',
-    '13.4': '',
-    '13.5': '',
-    '13.6': '',
+    '13.3': 'On some shelf in some hexagon (men reasoned) there must exist a book which is the formula and perfect compendium of all the rest: some librarian has gone through it and he is analogous to a god.',
+    '13.4': 'In the language of this zone vestiges of this remote functionary\'s cult still persist',
+    '13.5': 'Many wandered in search of Him.',
+    '13.6': 'For a century they have exhausted in vain the most varied areas.',
     '13.7': 'How could one locate the venerated and secret hexagon which housed Him?',
     '13.8': 'Someone proposed a regressive method:',
     '13.9': 'To locate book A, consult first book B which indicates A\'s position;',
     '13.10': 'to locate book B, consult first a book C, and so on to infinity...',
     '13.11': 'In adventures such as these, I have squandered and wasted my years.',
     '13.12': 'It does not seem unlikely to me that there is a total book on some shelf of the universe 3 ; ',
-    '13.13': '',
-    '13.14': '',
-    '13.15': '',
-    '13.16': '',
+    '13.13': 'I pray to the unknown gods that a man -',
+    '13.14': ' just one, even though it were thousands of years ago!',
+    '13.15': ' - may have examined and read it.',
+    '13.16': ' If honor and wisdom and happiness are not for me, let them be for others.',
     '13.17': ' Let heaven exist, though my place be in hell.',
-    '13.18': '',
-    '13.19': '',
-    '13.20': '',
-    '13.21': '',
-    '13.22': '',
-    '13.23': '',
+    '13.18': ' Let me be outraged and annihilated, but for one instant, in one being, let Your enormous Library be justified.',
+    '13.19': ' The impious maintain that nonsense is normal in the Library and that the reasonable (and even humble and pure coherence) is an almost miraculous exception. ',
+    '13.20': 'They speak (I know) of the "feverish Library whose chance volumes are constantly in danger of changing into others and affirm, negate and confuse everything like a delirious divinity."',
+    '13.21': ' These words, which not only denounce the disorder but exemplify it as well, notoriously prove their authors\' abominable taste and desperate ignorance.',
+    '13.22': ' In truth, the Library includes all verbal structures, all variations permitted by the twenty-five orthographical symbols, but not a single example of absolute nonsense.',
+    '13.23': '. It is useless to observe that the best volume of the many hexagons under my administration is entitled The Combed Thunderclap and another The Plaster Cramp and another Axaxaxas mlo.  s',
     '13.24': 'These phrases, at first glance incoherent, can no doubt be justified in a cryptographical or allegorical manner; such a justification is verbal and, ex hypothesi, already figures in the Library.',
     '13.25': 'I cannot combine some characters',   
     '14': 'dhcmrlchtdj',
-    '15.1': '',
-    '15.2': '',
-    '15.3': '',
-    '15.4': '',
-    '15.5': '',
-    '15.6': '',
-    '15.7': '',
-    '16.1': '',
-    '16.2': '',
-    '16.3': '',
+    '15.1': 'which the divine Library has not foreseen and which in one of its secret tongues do not contain a terrible meaning.',
+    '15.2': 'No one can articulate a syllable which is not filled with tenderness and fear, which is not, in one of these languages, the powerful name of a god.',
+    '15.3': ' To speak is to fall into tautology.',
+    '15.4': 'This wordy and useless epistle already exists in one of the thirty volumes of the five shelves of one of the innumerable hexagons -',
+    '15.5': ' and its refutation as well.',
+    '15.6': ' (An n number of possible languages use the same vocabulary; in some of them, the symbol library allows the correct definition a ubiquitous and lasting system of hexagonal galleries, but library is bread or pyramid or anything else, and these seven words which define it have another value.',
+    '15.7': ' You who read me, are You sure of understanding my language?)',
+    '16.1': 'The methodical task of writing distracts me from the present state of men.',
+    '16.2': 'The certitude that everything has been written negates us or turns us into phantoms.',
+    '16.3': 'I know of districts in which the young men prostrate themselves before books and kiss their pages in a barbarous manner, but they do not know how to decipher a single letter.',
     '16.4': 'Epidemics, heretical conflicts, peregrinations which inevitably degenerate into banditry, have decimated the population.',
     '16.5': ' I believe I have mentioned suicides, more and more frequent with the years.',
     '16.6': 'Perhaps my old age and fearfulness deceive me, but I suspect that the human species -',
@@ -184,9 +185,9 @@ const chapterTexts = {
     newText.textContent = chapterTexts[chapter];
     textDisplay.appendChild(newText);
     selectedTexts.push(newText);
+    window.scroll(0, 100000);
   }
   
-
 function clearText() {
   const textDisplay = document.getElementById('text-display');
   textDisplay.innerHTML = '';
@@ -199,4 +200,5 @@ function reverseSelection() {
     }
 }
 
-
+document.getElementById('clear-button').addEventListener('click', clearText);
+document.getElementById('reverse-button').addEventListener('click', reverseSelection);

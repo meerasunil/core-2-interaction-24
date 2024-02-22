@@ -24,10 +24,11 @@ h4{
     
 }
 h1 {
-    font-family: Combat;
+    font-family: Lithops;
     color: rgb(194, 149, 45);
     border: 4px dashed black;
     text-align: right;
+    font-size: 10rem;
 }
 p{
     text-align: center;
@@ -47,4 +48,8 @@ ul {
 }
 body { 
     margin: 0px 200px 0px 200px;
+}
+@font-face {
+    font-family:'Lithops' ;
+    src: url(./Lithops-Regular.ttf);
 }

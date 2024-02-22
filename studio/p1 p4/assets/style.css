@@ -12,21 +12,12 @@ button {
 font-family: 'IMFell Great Primer';
 }
 
-h2 { 
-  font-family: 'Averia Serif Libre';
-  font-size: .7rem;
-}
-h1 {
-  font-family: 'Averia Serif Libre';
-  font-size: 1rem;
-}
 
-@media only screen and (min-width: 600px) {
   .sidebar {
     position: fixed;
     background-color: gray;
     height: 100vh;
-    width: 170px;
+    width: 140px;
     top: 0;
     left: 0;
 
@@ -70,54 +61,6 @@ h1 {
   left: 20px;
   margin-left: 160px;
 }
-}
 
 
-
-@media (max-width: 600px){
-
-.content {
-  font-family: 'Averia Serif Libre';
-  font-size: 1rem; 
-  background-color: gray;
-  margin-top: 4rem;
-  margin-bottom:10rem;
-  filter: blur(.02rem);
-  color: white;
-  overflow: scroll;
-  background-image: url(./hexagon.png);
-  background-size: contain;
-}
-#clear-button {
-  color: rgb(12, 11, 11);
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-#reverse-button {
-  background-color: rgb(171, 171, 215);
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.sidebar{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 20%;
-  overflow: scroll;
-  background-color: rgb(177, 172, 172);
-  color: white;
-  text-align: center;
-
-}
-.header{ 
-  height: 10px;
-  margin-top: 50px;
-  font-family: 'Averia Serif Libre';
-  text-align: center;
-
-}}
 
