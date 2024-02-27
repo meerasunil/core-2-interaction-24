@@ -1,0 +1,21 @@
+
+.content {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid red;
+    border-style: ridge;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 75px 50px 75px;
+    gap: 10px;
+    
+}
+.content img{
+     width: 209px;
+     border: 1px ridge blue;
+}
+.content video{
+    width: 400px;
+}

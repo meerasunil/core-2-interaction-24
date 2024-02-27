@@ -1,0 +1,38 @@
+.Main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Group {
+    background:aqua;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.GroupOne {
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.Classmate {
+    background-color: dodgerblue;
+    border: 1px solid blue;
+    padding: 10px;
+    color: blue;
+    
+}
+#Meera {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
