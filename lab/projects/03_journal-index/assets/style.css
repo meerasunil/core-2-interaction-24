@@ -1,7 +1,7 @@
 
 .content {
-    background-color: rgb(255, 255, 255);
-    border: 3px solid red;
+    background-color: rgb(244, 239, 194);
+    border: 3px solid rgb(10, 126, 45);
     border-style: ridge;
     padding: 20px;
     display: flex;
@@ -12,10 +12,35 @@
     gap: 10px;
     
 }
+figure {
+    margin: 0;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+}
 .content img{
      width: 209px;
      border: 1px ridge blue;
 }
 .content video{
     width: 400px;
+}
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+html {
+     background-color: rgb(180, 233, 244);
+}
+.header { 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(183, 149, 250);
+    color: white;
+    text-align: center;
+    padding:10px;
+    position: sticky;
 }
