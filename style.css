@@ -3,6 +3,7 @@
     border: 1px dashed rgb(118, 15, 120);
     width: 50%;
     box-sizing: border-box;
+    overflow: scroll;
   }
 
   .row:after {
