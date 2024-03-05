@@ -128,7 +128,7 @@ var data = [
         name: 'unnamed vermin',
         manufacturer: 'unknown',
         creatures: ['gerbil', 'hamster', 'rodent'],
-        imageUrl: 'assets/rat.png',
+        imageUrl: 'assets/gerbil.png',
     },
     {
         name: 'unnamed multi-eyed upcycled/remixed beanie baby',
