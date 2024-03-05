@@ -1,0 +1,141 @@
+// An array of objects representing my collection:
+var data = [
+    {
+        name: 'Marina the flower cat',
+        manufacturer: ['Liberty\'s Things', 'independent'],
+        creatures: ['cat', 'flower', 'plant'],
+        year: 2023,
+        craft: 'handmade',
+        imageUrl: 'assets/marina.png',
+    },
+    {
+        name: 'Ralph the Glo Man',
+        manufacturer: 'Glo Gang',
+        creatures: ['humanoid sun energy hybrid with opioid addiction', 'sun', 'kind of undecided'],
+        year: 2017,
+        craft: 'mass produced',
+        imageUrl: 'assets/ralph.png',
+    },
+    {
+        name: 'bleeding heart sproutling',
+        manufacturer: ['Little Sproutling Nursery', 'independent'],
+        creatures: ['anthropomorphic bleeding heart plant', 'plant'],
+        year: 2022,
+        craft: 'handmade',
+        imageUrl:'assets/bh.png',
+    },
+    {
+        name: 'unnamed horsefly variant',
+        manufacturer: ['Little Sproutling Nursery', 'independent'],
+        creatures: ['horsefly type','bug/insect'],
+        year: 2023,
+        craft: 'handmade',
+        imageUrl:'assets/horsefly.png',
+    },
+    {
+        name: 'Daisy',
+        manufacturer: ['Petulant Pretty', 'independent'],
+        creatures: 'lamb',
+        year: 2023, 
+        craft: 'handmade',
+        imageUrl:'assets/daisy.png',
+
+    },
+    {
+        name: 'unstuffed Hugo',
+        manufacturer: ['independent', 'Demi\'s Plush Corner,'],
+        creatures: 'cow',
+        year: 2022,
+        craft: 'handmade',
+        imageUrl: 'assets/realist.png',
+
+
+    },
+    {
+        name: 'Stuart',
+        manufacturer: ['independent', 'The Cat\'s Pajamas'],
+        creatures: 'cat',
+        year: 2023,
+        craft: 'handmade',
+        imageUrl: 'assets/stuart.png',
+    },
+    {
+        name: 'Fabfuzz Calliope Pony',
+        manufacturer: 'Presley Paige',
+        creatures: ['pony'],
+        year: ['unknown'],
+        craft: 'mass produced',
+        imageUrl: 'assets/calliope.png',
+
+    },
+    {
+        name: 'Funceratops Clown Triceratops Plushie Kawaii Tiny Plush Cute Fluffy Pastel Circus Clowncore ',
+        manufacturer: ['cutiepies', 'independent'],
+        creatures: ['clown', 'rhinoceros', 'funcertatops'],
+        year: ['unknown'],
+        craft: 'handmade',
+        imageUrl: 'assets/rhino.png',
+    },
+    {
+        name: 'sakura inspired flying goat',
+        manufacturer:['independent', 'cirquell curiosities'],
+        creatures: ['flying goat', 'goat'],
+        year: 2022,
+        craft:'handmade',
+        imageUrl:'assets/sakura.png',
+    },
+    {
+        name: 'Bunnini Bunny',
+        manufacturer: 'mirianata on tumblr',
+        creatures: 'bunny',
+        year: 'unknown',
+        imageUrl: 'assets/tumb.png',
+    },
+    {
+        name: 'Annalee Cupid’s Angel Mice',
+        manufacturer: 'Annalee Thorndike',
+        creatures: ['mice', 'angel'],
+        year: 1993,
+        craft: 'handmade',
+        imageUrl: 'assets/mice.png',
+        
+    },
+    {
+        name: 'Graceful deer',
+        manufacturer: ['Nyssa Benthin', 'Lithe-Fider'],
+        creatures: 'deer',
+        year: 2016, 
+        craft: 'handmade',
+        imageUrl: 'assets/deer.png',
+    },
+    {
+        name: 'Baphomet vers 1',
+        manufacturer: ['independent', 'mylittlesatan'],
+        creatures: ['baphomet', 'amibguous animal'],
+        year: 2019,
+        craft: 'handmade',
+        imageUrl: 'assets/wb.png',
+    },
+    {
+        name: 'Baphomet vers 2',
+        manufacturer: ['independent', 'mylittlesatan'],
+        creatures: ['baphomet', 'amibguous animal'],
+        year: 2019,
+        craft: 'handmade',
+        imageUrl: 'assets/bb.png',
+    },
+    {
+        name: 'unnamed vermin',
+        manufacturer: 'unknown',
+        creatures: ['gerbil', 'hamster', 'rodent'],
+        imageUrl: 'assets/rat.png',
+    },
+    {
+        name: 'unnamed multi-eyed upcycled/remixed beanie baby',
+        manufacturer: ['Beanie Babies', 'independent upcycling'],
+        creatures: ['sheep', 'lamb'],
+        craft: 'handmade',
+        imageUrl: 'assets/unk.png',
+
+    }
+];
