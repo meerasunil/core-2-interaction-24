@@ -2,48 +2,72 @@
 var data = [
     {
         name: 'Marina the flower cat',
-        manufacturer: ['Liberty\'s Things', 'independent'],
+        manufacturer: {
+            name: 'Liberty\'s Things', 
+            category:'independent',
+        },
         creatures: ['cat', 'flower', 'plant'],
         year: 2023,
         craft: 'handmade',
         imageUrl: 'assets/marina.png',
     },
+    /*---------------*/
     {
         name: 'Ralph the Glo Man',
-        manufacturer: 'Glo Gang',
+        manufacturer: {
+            name:'Glo Gang',
+            category: 'corporate-owned'
+        },
         creatures: ['humanoid sun energy hybrid with opioid addiction', 'sun', 'kind of undecided'],
         year: 2017,
         craft: 'mass produced',
         imageUrl: 'assets/ralph.png',
     },
+    /*---------------*/
     {
         name: 'bleeding heart sproutling',
-        manufacturer: ['Little Sproutling Nursery', 'independent'],
+        manufacturer: {
+            name:'Little Sproutling Nursery',
+            category: 'independent'
+        },
         creatures: ['anthropomorphic bleeding heart plant', 'plant'],
         year: 2022,
         craft: 'handmade',
         imageUrl:'assets/bh.png',
     },
+    /*---------------*/
     {
         name: 'unnamed horsefly variant',
-        manufacturer: ['Little Sproutling Nursery', 'independent'],
+        manufacturer: {
+            name: 'Little Sproutling Nursery', 
+            category: 'independent',
+        },
         creatures: ['horsefly type','bug/insect'],
         year: 2023,
         craft: 'handmade',
         imageUrl:'assets/horsefly.png',
     },
+/*---------------*/
     {
         name: 'Daisy',
-        manufacturer: ['Petulant Pretty', 'independent'],
+        manufacturer: {
+            name: 'Petulant Pretty',
+            category: 'independent',
+        },
         creatures: 'lamb',
         year: 2023, 
         craft: 'handmade',
         imageUrl:'assets/daisy.png',
 
     },
+/*------------------*/
     {
         name: 'unstuffed Hugo',
-        manufacturer: ['independent', 'Demi\'s Plush Corner,'],
+        manufacturer: {
+            name: 'Demi\'s Plush Corner',
+            category: 'independent',
+
+        },
         creatures: 'cow',
         year: 2022,
         craft: 'handmade',
@@ -51,91 +75,149 @@ var data = [
 
 
     },
+/*---------------*/
     {
         name: 'Stuart',
-        manufacturer: ['independent', 'The Cat\'s Pajamas'],
+        manufacturer: {
+            name: 'The Cat\'s Pajamas',
+            category: 'independent', 
+        },
         creatures: 'cat',
         year: 2023,
         craft: 'handmade',
         imageUrl: 'assets/stuart.png',
     },
+    /*---------------*/
     {
         name: 'Fabfuzz Calliope Pony',
-        manufacturer: 'Presley Paige',
+        manufacturer: {
+            name: 'Presley Paige',
+            category: 'corporate-owned',
+        },
         creatures: ['pony'],
-        year: ['unknown'],
+        year: 2018,
         craft: 'mass produced',
         imageUrl: 'assets/calliope.png',
 
     },
+    /*---------------*/
     {
         name: 'Funceratops Clown Triceratops Plushie Kawaii Tiny Plush Cute Fluffy Pastel Circus Clowncore ',
-        manufacturer: ['cutiepies', 'independent'],
+        manufacturer: {
+            name: 'cutiepies', 
+            category: 'independent',
+        },
         creatures: ['clown', 'rhinoceros', 'funcertatops'],
-        year: ['unknown'],
+        year: 2023,
         craft: 'handmade',
         imageUrl: 'assets/rhino.png',
     },
+    /*---------------*/
     {
         name: 'sakura inspired flying goat',
-        manufacturer:['independent', 'cirquell curiosities'],
+        manufacturer:{
+            name: 'cirquell curiosities', 
+            category: ' independent',
+        },
         creatures: ['flying goat', 'goat'],
         year: 2022,
         craft:'handmade',
         imageUrl:'assets/sakura.png',
     },
+    /*---------------*/
     {
         name: 'Bunnini Bunny',
-        manufacturer: 'mirianata on tumblr',
+        manufacturer: {
+            name: 'Mirianata', 
+            category: 'independent'
+        },
         creatures: 'bunny',
-        year: 'unknown',
+        year: 2012,
         imageUrl: 'assets/tumb.png',
     },
+    /*---------------*/
     {
         name: 'Annalee Cupid’s Angel Mice',
-        manufacturer: 'Annalee Thorndike',
+        manufacturer: {
+            name: 'Annalee Thorndike',
+            category: 'independent',
+        },
         creatures: ['mice', 'angel'],
         year: 1993,
         craft: 'handmade',
         imageUrl: 'assets/mice.png',
         
     },
+    /*---------------*/
     {
         name: 'Graceful deer',
-        manufacturer: ['Nyssa Benthin', 'Lithe-Fider'],
+        manufacturer: {
+            name: ['Nyssa Benthin', 'Lithe-Fider'],
+            category: 'independent',
+        },
         creatures: 'deer',
         year: 2016, 
         craft: 'handmade',
         imageUrl: 'assets/deer.png',
     },
+    /*---------------*/
     {
         name: 'Baphomet vers 1',
-        manufacturer: ['independent', 'mylittlesatan'],
+        manufacturer: {
+            brand: 'mylittlesatan',
+            category:'independent',
+        },
         creatures: ['baphomet', 'amibguous animal'],
         year: 2019,
         craft: 'handmade',
         imageUrl: 'assets/wb.png',
     },
+    /*---------------*/
     {
         name: 'Baphomet vers 2',
-        manufacturer: ['independent', 'mylittlesatan'],
+        manufacturer: {
+            brand: 'mylittlesatan',
+            category:'independent',
+        },
         creatures: ['baphomet', 'amibguous animal'],
         year: 2019,
         craft: 'handmade',
         imageUrl: 'assets/bb.png',
     },
+    /*---------------*/
     {
         name: 'unnamed vermin',
-        manufacturer: 'unknown',
+        manufacturer: {
+            name: 'unknown',
+            category: 'unknown'
+        },
         creatures: ['gerbil', 'hamster', 'rodent'],
+        year: 'unknown',
+        craft: 'unknown',
         imageUrl: 'assets/gerbil.png',
     },
+    /*---------------*/
     {
         name: 'unnamed multi-eyed upcycled/remixed beanie baby',
-        manufacturer: ['Beanie Babies', 'independent upcycling'],
+        manufacturer: {
+            name: ['Beanie Babies', 'unknown remixer'],
+            category: ['independent', 'corporate-owned'],
+        },
         creatures: ['sheep', 'lamb'],
         craft: 'handmade',
         imageUrl: 'assets/unk.png',
 
-    }
+    },
+    /*---------------*/
+    {
+        name: 'Squishable Alter Ego Plague Doctor',
+        manufacturer: {
+            category:'mass produced', 
+            name: 'Off the Wagon',
+        },
+        creatures: ['druid', 'druid plague doctor', 'plague doctor'],
+        craft: 'mass produced',
+        imageUrl: 'assets/plague.png',
+    },
+
 ];

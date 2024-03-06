@@ -1,0 +1,103 @@
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: white;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+.road {
+width: 20vw;
+height: auto;
+transform: skew(240deg);
+background: #1b1820;
+position: absolute;
+top: 0vw;
+bottom: 0;
+left: 70vw;
+}
+.roadmarks1 { 
+  width: 2%;
+  height: auto;
+  transform: skew(240deg);
+  background-color: rgb(255, 255, 40);
+  position: absolute;
+  top: 0vw;
+  bottom: 0;
+  left: 80vw;
+}
+
+.roadtwo {
+  width: 20vw;
+  height: auto;
+  transform: skew(240deg);
+  background: #1b1820;
+  position: absolute;
+  top: 0vw;
+  bottom: 0;
+  left: 0vw;
+  z-index: 0;
+  }
+  .roadmarks2 {
+    width: 2%;
+    height: auto;
+    transform: skew(240deg);
+    background: #ecff17;
+    position: absolute;
+    top: 0vw;
+    bottom: 0;
+    left: 10vw;
+    z-index: 4;
+    }
+    .flower {
+    background-color: green;
+    width: 0.3vw;
+    height: 9vw;
+    rotate: 0deg;
+    top: 18vw;
+    left:  87vw;
+    position: absolute;
+     }
+     .pedal {
+    background-color: #44d337;
+    width: 3.3vw;
+    height: 3.3vw;
+    border-radius: 50%;
+    top: 17vw;
+    left: 85.6vw;
+    position: absolute;
+    }
+    .flower2{
+      background-color: green;
+      width: .3vw;
+      height: 9vw;
+      rotate:0deg;
+      top: 18vw;
+      left: 17vw;
+      position: absolute;
+    }
+    .pedal2{
+      background-color: #44d337;
+      width: 3.3vw;
+      height: 3.3vw;
+      border-radius: 50%;
+      top: 18vw;
+      left: 15.6vw;
+      position: absolute;
+    }
+    .sign{
+      background-color: tan;
+      width: 15%;
+      height: 4%;
+      position: absolute;
+      z-index: 5;
+      top: 66%;
+      right: 50%;
+      transform: skewY(30deg);
+    
+    }
