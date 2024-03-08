@@ -1,0 +1,34 @@
+html {
+    background-image: url(./boat2\ copy.jpg);
+    background-size: cover;
+    filter: contrast(65%);
+    filter: brightness(78%);
+}
+#table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(155, 51, 51);
+    padding: 8px;
+    background-image: url(./bg.jpg);
+    
+  }
+  
+td{
+    text-align: center;
+}
+    
+th {
+    text-align: centers;
+}
+  h1 {
+     text-align: center;
+     color: white;
+     font-family: cursive;
+  }
+  img {
+    max-width: 200px;
+  }
+  .content { 
+    margin: 50px 50px 50px 50px;
+  }

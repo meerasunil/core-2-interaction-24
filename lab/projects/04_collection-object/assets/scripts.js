@@ -12,9 +12,10 @@ function checkImage(url) {
     img.src = url;
 };
 data.forEach(function(item) {
-    console.log("boomtown:", item.name);
     checkImage(item.imageUrl);
+    console.log("boomtown:", item.name);
     console.log(item.manufacturer);
-    console.log(item.year);
+    console.log(item.url);
+    
 });
 
