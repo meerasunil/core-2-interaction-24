@@ -28,7 +28,7 @@ h1{
   text-decoration: none;
 }
 td { 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Gamja Flower';
   text-align: center;
   border: 2px solid black;
 }
@@ -38,4 +38,8 @@ td {
     position: relative;
     margin: 50px 50px 50px 50px;
 
+}
+@font-face {
+  font-family: 'Gamja Flower';
+  src: url(./GamjaFlower-Regular.ttf);
 }
