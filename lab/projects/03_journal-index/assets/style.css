@@ -3,13 +3,12 @@
     background-color: rgb(244, 239, 194);
     border: 3px solid rgb(10, 126, 45);
     border-style: ridge;
-    padding: 20px;
+    padding: 90px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 50px 75px 50px 75px;
-    gap: 10px;
+    overflow-x: scroll;
+    gap: 20px;
+   
     
 }
 figure {
@@ -19,10 +18,15 @@ figure {
     width: auto;
     height: 100%;
     max-width: 100%;
-    background-color: aliceblue;
+
 }
+#text {
+    width: 200px;
+    min-width: 100px
+}
+
 .content img{
-     width: 209px;
+     width: 300px;
      border: 1px ridge blue;
 }
 .content video{
@@ -41,11 +45,13 @@ html {
     top: 0;
     left: 0;
     width: 100vw;
+    height: 2vh;
+    position: sticky;
     background-color: rgb(183, 149, 250);
     color: white;
     text-align: center;
-    padding:10px;
-    position: sticky;
+    padding: 20px;
+   
 }
 @media (max-width: 600px){
     .content{

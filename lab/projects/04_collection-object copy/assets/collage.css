@@ -1,0 +1,32 @@
+@media only screen and (min-width: 769px) {
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./aiboat2.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.content {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Fuggles';
+    font-size: 100px;
+    position: relative;
+    
+}
+.collage {
+    position: absolute;
+    top: 0px;
+    left: 670px;
+    transform: translateX(-50%);
+}
+}
+
+@font-face {
+    font-family: 'Fuggles';
+    src: url(./Fuggles/Fuggles-Regular.ttf);
+    
+}
+

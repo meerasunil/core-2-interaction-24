@@ -177,10 +177,10 @@ var data = [
     {
         name: 'Baphomet vers 1',
         manufacturer: {
-            brand: 'mylittlesatan',
+            name: 'mylittlesatan',
             category:'independent',
         },
-        creatures: ['baphomet', 'amibguous animal'],
+        creatures: ['baphomet', 'ambiguous animal'],
         year: 2019,
         craft: 'handmade',
         imageUrl: 'assets/wb.png',
@@ -190,10 +190,10 @@ var data = [
     {
         name: 'Baphomet vers 2',
         manufacturer: {
-            brand: 'mylittlesatan',
+            name: 'mylittlesatan',
             category:'independent',
         },
-        creatures: ['baphomet', 'amibguous animal'],
+        creatures: ['baphomet', 'ambiguous animal'],
         year: 2019,
         craft: 'handmade',
         imageUrl: 'assets/bb.png',
@@ -214,14 +214,14 @@ var data = [
     },
     /*---------------*/
     {
-        name: 'unnamed multi-eyed upcycled/remixed beanie baby',
+        name: 'Lucy Belle',
         manufacturer: {
-            name: ['Beanie Babies', 'unknown remixer'],
+            name: ['Beanie Babies', 'Saint Gein', 'Craggy Critters'],
             category: ['independent', 'corporate-owned'],
         },
         creatures: ['sheep', 'lamb'],
         craft: 'handmade',
-        year: 'unknown',
+        year: '2021',
         imageUrl: 'assets/unk.png',
         url: 'https://pin.it/3mUqzL6fU',
 
@@ -264,18 +264,20 @@ var data = [
         imageUrl: "assets/blue.png",
         url: 'https://www.etsy.com/listing/1116403500/penny-pdf-pattern-5-12-teddy-bear-by?click_key=d593b0326171caee32470920fa2f333b6da7c245%3A1116403500&click_sum=7c115621&ref=shop_home_active_1',
     },
+        /*---------------*/
     {
         name: 'unnamed Austrailian Shepard',
         manufacturer: {
             name: 'Rakel\'s Thingies',
             category: 'independent',
     },
-            creatures: 'austrailian shepard dog',
+            creatures: ['austrailian shepard dog', 'dog'],
             year: 2024,
             craft: 'handmade',
             imageUrl: "assets/aus.png",
             url: 'https://www.instagram.com/p/C22fHsQLvOk/?utm_source=ig_web_copy_link',
     },
+        /*---------------*/
     {
         name: 'ScareBo',
         manufacturer: {
@@ -288,6 +290,7 @@ var data = [
             imageUrl: 'assets/cosbo.png',
             url: 'https://www.instagram.com/p/CxQmOyuLBQx/?utm_source=ig_web_copy_link',
     },
+        /*---------------*/
     {
         name: 'Flower power Tortoise',
         manufacturer: {
@@ -300,6 +303,7 @@ var data = [
         imageUrl: 'assets/tort.png',
         url: "https://www.instagram.com/p/Cr84NHquRcP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     },
+        /*---------------*/
     {
         name: 'Dreamy moon shaggy bunny',
         manufacturer: {
@@ -312,6 +316,7 @@ var data = [
         imageUrl: 'assets/dream.png',
         url: 'https://www.instagram.com/p/CvDJdChx3G6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
+        /*---------------*/
     {
         name: 'Grumpy Mantis',
         manufacturer: {
@@ -324,6 +329,7 @@ var data = [
         imageUrl: 'assets/mantis.png',
         url: 'https://www.instagram.com/p/C1vGUi3JFXR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
+        /*---------------*/
     {
         name: 'Party Stuart',
         manufacturer: {
@@ -335,5 +341,80 @@ var data = [
         craft: 'handmade',
         imageUrl: 'assets/pstuart.png',
         url: 'https://www.instagram.com/p/CviTbgmPBU8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+        /*---------------*/
+    {
+        name:'unnamed',
+        manufacturer: {
+            name:'Jessica Kingstone',
+            category: 'independent',
+        },
+        creatures:'unknown',
+        year: 2013,
+        craft:'handmade',
+        imageUrl:'assets/jessking.png',
+        url:'https://mollydestroyerofworlds.tumblr.com/post/39446108500/thestasher-frozencrafts-by-jessica',
+    },
+        /*---------------*/
+    {
+        name:'unnamed mother & baby',
+        manufacturer: {
+            name: 'Liberty\'s Things',
+            category: 'independent',
+        },
+        creatures: ['cat', 'kitten'],
+        year: 2023,
+        craft: 'handmade',
+        imageUrl:'assets/carebear.png',
+        url: 'https://www.instagram.com/p/Cy_3X8IK1sW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+        /*---------------*/
+    {
+        name: 'Two Heads Kitty Plush Bag',
+        manufacturer: {
+            name: ['Devil Inspired', 'Bully Bunny'],
+            category: 'corporate-owned',
+        },
+        creatures: 'cat',
+        year: 2021,
+        craft: 'unknown',
+        imageUrl: 'assets/kittybag.png',
+        url: 'https://www.devilinspired.com/devilInspired-special-offer/ready-to-ship-double-heads-kitty-plush-bag-by-bully-bunny.html',
+    },
+    {
+        name: 'unnamed Meadow Witch 1',
+        manufacturer: {
+            name: ['Mask Shop', 'den tree dolls', 'TheDenTree',],
+            category: 'independent',
+        },
+        creatures: 'meadow witch',
+        year: 2019,
+        craft: ['handmade', 'needle felt'],
+        imageUrl: 'assets/fairything.png',
+        url: 'https://pin.it/35ayqLy6C',
+    },
+    {
+        name: 'Clown Opossum',
+        manufacturer: {
+            name: 'Nichet Crochet',
+            category: 'independent',
+        },
+        creatures: ['clown', 'opossum',],
+        year: 2022,
+        craft: ['handmade', 'crochet'],
+        imageUrl: 'assets/clownpossum.png',
+        url: 'https://www.etsy.com/listing/1271828652/clown-opossum-crochet-pattern-english?ref=share_v4_lx&epik=dj0yJnU9bEp2amNhMUNTeWZ6eTdUMURhem9nckdVWVltSjFvYzcmcD0wJm49VW13ZzRPWUlPQkE0YkZ6aTJVN3JZdyZ0PUFBQUFBR1g0ZXB3',
+    },
+    {
+        name: 'unnamed Bear',
+        manufacturer: {
+            name: 'unknown',
+            category: 'unknown',
+        },
+        creatures: 'bear',
+        year: 'unknown',
+        craft: 'unknown',
+        imageUrl: 'assets/bear.png',
+        url: 'https://pin.it/6m8jjdYyx',
     },
 ];

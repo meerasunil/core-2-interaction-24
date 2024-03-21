@@ -1,33 +1,41 @@
 html {
-    background-image: url(./boat2\ copy.jpg);
-    background-repeat: repeat;
+  background-image: url(./ffflux2.svg);
+  background-size: 100%;
     filter: contrast(65%);
-    filter: brightness(78%);
+    filter: brightness(79%);
+   
 }
 table {
-  border-collapse: collapse;
   margin: 50px 50px 50px 50px;
-  background-image: url(./bg.jpg);
+  filter: blur(.02rem);
   
 }
 th, td {
   text-align: left;
   padding: 8px;
+ background-size: cover;
 }
 th {
-  background-color: tan;
   color: white;
   font-family: cursive;
   text-align: center;
+
 }
 h1{ 
   color: white;
   text-align: center;
   font-family: cursive;
-  
+  text-decoration: none;
 }
 td { 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  filter: blur(.02rem);
   text-align: center;
+  border: 2px solid black;
+}
+.heading-box {
+    position: relative;
+    border: 2px solid rgb(242, 232, 192);
+    position: relative;
+    margin: 50px 50px 50px 50px;
+
 }
