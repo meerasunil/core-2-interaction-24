@@ -30,3 +30,8 @@ body {
     
 }
 
+ /* Style for draggable objects */
+ .draggable {
+    position: absolute;
+    cursor: grab;
+}

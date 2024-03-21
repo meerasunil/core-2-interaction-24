@@ -1,0 +1,49 @@
+/*HEADING*/
+h1{ 
+  color: white;
+  text-align: center;
+  font-family: 'Fiddums';
+  text-decoration: none;
+  font-size: 70px;
+}
+.heading-box {
+    position: relative;
+    border: 2px solid black;
+    position: relative;
+    margin: 50px 50px 50px 50px;
+
+}
+/*TABLE*/
+table {
+  margin: 50px 50px 50px 50px;
+  filter: blur(.00rem);
+  
+}
+th, td {
+  text-align: left;
+  background-size: cover;
+}
+th {
+  color: rgb(18, 12, 12);
+  font-family: 'Volutes';
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid black;
+
+}
+td { 
+  font-family: 'Volutes';
+  text-align: center;
+  border: 2px solid black;
+  text-decoration: underline;
+}
+/*FONTS*/
+
+@font-face {
+  font-family: 'Volutes';
+  src: url(./Volutes/Volutes.ttf);
+}
+@font-face {
+  font-family: 'Fiddums';
+  src: url(./fiddums-family/Fiddums\ Family.ttf);
+}

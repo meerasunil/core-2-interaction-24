@@ -41,7 +41,7 @@ function generateTableRows(data) {
 
 generateTableRows(data);
 
-// Define a variable to keep track of the current sorting order
+
 let sortDirection = {
     name: 'asc',
     manufacturer: 'asc',
@@ -49,13 +49,13 @@ let sortDirection = {
     craft: 'asc'
 };
 
-// Function to sort the data based on a given key and sorting order
+
 function sortData(key) {
     data.sort((a, b) => {
         let itemA = a[key];
         let itemB = b[key];
 
-        // Convert to lowercase if the data is a string, otherwise keep it as is
+
         if (typeof itemA === 'string') {
             itemA = itemA.toLowerCase();
         }
@@ -70,12 +70,12 @@ function sortData(key) {
 }
 
 
-// Function to toggle the sorting direction
+
 function toggleSortDirection(key) {
     sortDirection[key] = sortDirection[key] === 'asc' ? 'desc' : 'asc';
 }
 
-// Attach event listeners to the table headings
+
 document.querySelector('#nameHeading').addEventListener('click', () => {
     sortData('name');
     toggleSortDirection('name');
@@ -100,7 +100,7 @@ document.querySelector('#craftHeading').addEventListener('click', () => {
     regenerateTable();
 });
 
-// Function to regenerate the table with sorted data
+
 function regenerateTable() {
     const tbody = document.querySelector('#plushTable tbody');
     tbody.innerHTML = '';
