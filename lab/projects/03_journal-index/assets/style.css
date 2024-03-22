@@ -1,4 +1,3 @@
-
 .content {
     background-color: rgb(244, 239, 194);
     border: 3px solid rgb(10, 126, 45);
@@ -8,16 +7,15 @@
     flex-wrap: wrap;
     overflow-x: scroll;
     gap: 20px;
-   
-    
+   margin: 10px 0px 10px 0px;
 }
 figure {
-    margin: 0;
     border: 6px black;
     position: relative;
     width: auto;
     height: 100%;
     max-width: 100%;
+    margin: 0px 10px 0px 10px;
 
 }
 #text {
@@ -33,10 +31,11 @@ figure {
     width: 200px;
 }
 figcaption {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     text-align: center;
     margin-top: 5px;
+    color: green;
 }
 html {
      background-color: rgb(180, 233, 244);
@@ -46,8 +45,9 @@ html {
     left: 0;
     width: 100vw;
     height: 2vh;
-    position: sticky;
-    background-color: rgb(183, 149, 250);
+    position: relative;
+    background-color: rgb(180, 233, 244);
+    border: 2px solid black;
     color: white;
     text-align: center;
     padding: 20px;

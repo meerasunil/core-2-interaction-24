@@ -1,19 +1,21 @@
 function renderImages() {
     const container = document.getElementById('container');
+    var containerWidth = container.offsetWidth;
+    var containerHeight = container.offsetHeight;
+    console.log(containerWidth)
 
     data.forEach((item, index) => {
         const draggableItem = document.createElement('img');
         draggableItem.className = 'draggable';
         draggableItem.src = item.imageUrl;
         draggableItem.alt = item.name;
-        draggableItem.style.left = `${index * 20}px`; // Adjust initial position
-        draggableItem.style.top = `${index * 20}px`; // Adjust initial position
+        draggableItem.style.left = `${index * (containerWidth / data.length )}px`; 
+        draggableItem.style.top = `${index * (containerHeight / data.length )}px`;
         container.appendChild(draggableItem);
         makeDraggable(draggableItem);
     });
 }
 
-// Function to make images draggable
 function makeDraggable(item) {
     let offsetX, offsetY;
 
@@ -37,7 +39,6 @@ function makeDraggable(item) {
     }
 }
 
-// Render images on page load
 document.addEventListener('DOMContentLoaded', () => {
     renderImages();
 });
