@@ -1,0 +1,228 @@
+/*DESKTOP*/
+@media only screen and (min-width: 481px) {
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./aiboat2.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Fiddums';
+    font-size: 200px;
+    position: relative;
+    text-decoration: none;
+    
+    
+}
+.popup-box {
+    position: absolute;
+    background-color: rgb(234, 212, 212);
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    overflow: scroll;
+}
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+    z-index: 2; 
+}
+.container img { 
+    width: 70px;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    height: 100vh;
+}
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid rgb(233, 11, 11);
+    overflow: hidden;
+}
+
+.draggable {
+    position: absolute;
+    cursor: pointer;
+}
+
+#small-box {
+    position: absolute;
+    width: 100vw; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px dashed rgb(61, 227, 103);
+    top: -100px;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style for the carousel container */
+  .carousel {
+    white-space: nowrap; /* Prevent images from wrapping */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  /* Style for carousel images */
+  .carousel img {
+    width: 100%; /* Make images full width */
+    display: inline-block; /* Display images in a row */
+    vertical-align: middle; /* Align images vertically */
+  }
+  
+  /* Animation for scrolling effect */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Apply animation to the carousel */
+  .carousel img {
+    animation: scroll 20s linear infinite; /* Adjust animation duration as needed */
+  }
+/*FONTS*/
+@font-face {
+    font-family: 'Fuggles';
+    src: url(./Fuggles/Fuggles-Regular.ttf);
+    
+}
+@font-face {
+    font-family: 'Fiddums';
+    src: url(./fiddums-family/Fiddums\ Family.ttf);
+  }
+  
+}
+/*IPHONE*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('./aiboat2.png') no-repeat;
+        background-size: contain;
+        background-color: rgb(136, 191, 213);
+    }
+    
+    h1 {
+        color: greenyellow;
+        text-align: center;
+        font-family: 'Fuggles';
+        font-size: 100px;
+        position: relative;
+        
+    }
+    
+    .popup-box {
+        position: absolute;
+        background-color: rgb(234, 212, 212);
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 1000; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        overflow: scroll;
+    }
+    
+    .draggable {
+        position: absolute;
+        cursor: grab;
+        z-index: 2; 
+    }
+    .container img { 
+        width: 20px;
+        z-index: 2;
+    }
+ 
+    .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        height: 100vh;
+    }
+    #container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid rgb(233, 11, 11);
+        overflow: hidden;
+    }
+    
+    .draggable {
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    #small-box {
+        position: absolute;
+        width: 100vw; /* Adjust width as needed */
+        height: 400px; /* Adjust height as needed */
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px dashed rgb(61, 227, 103);
+        top: -100px;
+        
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+      
+
+      .carousel {
+        white-space: nowrap; 
+        overflow: hidden; 
+      }
+      
+      /* Style for carousel images */
+      .carousel img {
+        width: auto; 
+        height: 80vh;
+        display: inline-block;
+        vertical-align: middle; 
+      }
+      
+      /* Animation for scrolling effect */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      
+      
+      .carousel img {
+        animation: scroll 20s linear infinite; 
+      }
+    }
