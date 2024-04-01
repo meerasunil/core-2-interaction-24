@@ -54,8 +54,10 @@ function makeDraggable(item, dataItem) {
     function showPopup(item, dataItem) {
         const popupBox = document.getElementById('popup-box');
         const itemRect = item.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
     
-      
+        // Set pop-up box content
         let content = `<h3>${dataItem.name}</h3>`;
         content += `<p>Manufacturer: ${dataItem.manufacturer.name}</p>`;
         content += `<p>Manufacturer: ${dataItem.manufacturer.category}</p>`;
@@ -63,14 +65,24 @@ function makeDraggable(item, dataItem) {
         content += `<p>Birthday: ${dataItem.year}</p>`;
         content += `<p>Craft: ${dataItem.craft}</p>`;
     
+        // Position pop-up box next to the dropped item
         popupBox.innerHTML = content;
         popupBox.style.left = `${itemRect.right}px`;
         popupBox.style.top = `${itemRect.top}px`;
     
-        
+        // Check if pop-up box exceeds viewport boundaries
+        const popupBoxRect = popupBox.getBoundingClientRect();
+        if (popupBoxRect.right > viewportWidth) {
+            popupBox.style.left = `${itemRect.left - popupBoxRect.width}px`;
+        }
+        if (popupBoxRect.bottom > viewportHeight) {
+            popupBox.style.top = `${viewportHeight - popupBoxRect.height}px`;
+        }
+    
+        // Display pop-up box
         popupBox.style.display = 'block';
     
-        
+        // Add event listener to body to hide pop-up box when clicked outside of it
         const bodyClickHandler = (e) => {
             if (!popupBox.contains(e.target) && e.target !== item) {
                 hidePopup();
@@ -79,6 +91,7 @@ function makeDraggable(item, dataItem) {
         };
         document.body.addEventListener('click', bodyClickHandler);
     }
+    
     
     function hidePopup() {
         const popupBox = document.getElementById('popup-box');

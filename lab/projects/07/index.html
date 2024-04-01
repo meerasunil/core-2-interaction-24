@@ -8,27 +8,27 @@
 </head>
 <body>
     <div class="heading-box">
-  <h1>
-    <a href="./collage.html">List or Manifest of All Noah’s Ark Passengers For The Immigration Officer at Port Noah</a> 
-  </h1>
+        <h1>
+            <a href="./collage.html">List or Manifest of All Noah’s Ark Passengers For The Immigration Officer at Port Noah</a> 
+        </h1>
     </div>
-  <div class="table-container">
-  <table id="plushTable">
-    <thead>
-        <tr>
-            <th>Image</th>
-            <th id="nameHeading">Name</th>
-            <th id="manufacturerHeading">Creator + Place of Origin</th>
-            <th id="creaturesHeading">Creature</th>
-            <th>Birthday</th>
-            <th id="craftHeading">Craft</th>
-            <th>Visa</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-</div>
+    <div class="table-container">
+        <table id="plushTable">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th class="sortable" data-key="name" id="nameHeading">Name<span class="sort-arrow" id="nameArrow"></span></th>
+                    <th class="sortable" data-key="manufacturer.name" id="manufacturerHeading">Creator + Place of Origin <span class="sort-arrow" id="manufacturerArrow"></span></th>
+                    <th class="sortable" data-key="creatures" id="creaturesHeading">Creature<span class="sort-arrow" id="creaturesArrow"></span></th>
+                    <th class="sortable" data-key="year" id="birthdayHeading">Birthday<span class="sort-arrow" id="birthdayArrow"></span></th>
+                    <th class="sortable" data-key="craft" id="craftHeading">Craft<span class="sort-arrow" id="craftArrow"></span></th>
+                    <th>Visa</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
     <script src="assets/data.js"></script>
     <script src="assets/scripts.js"></script>
 </body>
