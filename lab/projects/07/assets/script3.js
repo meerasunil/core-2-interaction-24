@@ -11,7 +11,7 @@ function renderImages() {
         draggableItem.style.left = `${index * (containerWidth / data.length)}px`; 
         draggableItem.style.bottom = `${index * (0)}px`;
         container.appendChild(draggableItem);
-        makeDraggable(draggableItem, item); // Pass item object to makeDraggable
+        makeDraggable(draggableItem, item); 
     });
 }
 
@@ -54,10 +54,11 @@ function makeDraggable(item, dataItem) {
     function showPopup(item, dataItem) {
         const popupBox = document.getElementById('popup-box');
         const itemRect = item.getBoundingClientRect();
+        const containerRect = document.getElementById('container').getBoundingClientRect();
         const viewportWidth = window.innerWidth;
         const viewportHeight = window.innerHeight;
     
-        // Set pop-up box content
+       
         let content = `<h3>${dataItem.name}</h3>`;
         content += `<p>Manufacturer: ${dataItem.manufacturer.name}</p>`;
         content += `<p>Manufacturer: ${dataItem.manufacturer.category}</p>`;
@@ -65,20 +66,33 @@ function makeDraggable(item, dataItem) {
         content += `<p>Birthday: ${dataItem.year}</p>`;
         content += `<p>Craft: ${dataItem.craft}</p>`;
     
-        // Position pop-up box next to the dropped item
+        
         popupBox.innerHTML = content;
         popupBox.style.left = `${itemRect.right}px`;
         popupBox.style.top = `${itemRect.top}px`;
     
-        // Check if pop-up box exceeds viewport boundaries
-        const popupBoxRect = popupBox.getBoundingClientRect();
-        if (popupBoxRect.right > viewportWidth) {
-            popupBox.style.left = `${itemRect.left - popupBoxRect.width}px`;
-        }
-        if (popupBoxRect.bottom > viewportHeight) {
-            popupBox.style.top = `${viewportHeight - popupBoxRect.height}px`;
-        }
+  
+// Check if pop-up box exceeds viewport boundaries
+const popupBoxRect = popupBox.getBoundingClientRect();
+
+// Horizontal position adjustment
+if (popupBoxRect.right > viewportWidth) {
+    // Check if there's enough space on the left side, otherwise, move to the right side
+    popupBox.style.left = popupBoxRect.width > itemRect.left ? '0' : `${viewportWidth - popupBoxRect.width}px`;
+} else if (popupBoxRect.left < 0) {
+    // Check if there's enough space on the right side, otherwise, move to the left side
+    popupBox.style.left = `${itemRect.right}px`;
+}
+
+// Vertical position adjustment
+if (popupBoxRect.bottom > viewportHeight) {
+    popupBox.style.top = `${viewportHeight - popupBoxRect.height}px`;
+} else if (popupBoxRect.top < 0) {
+    popupBox.style.top = `${itemRect.bottom}px`;
+}
+
     
+      
         // Display pop-up box
         popupBox.style.display = 'block';
     

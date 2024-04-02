@@ -1,5 +1,5 @@
 /*DESKTOP*/
-@media only screen and (min-width: 481px) {
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 h1 {
     color: greenyellow;
     text-align: center;
-    font-family: 'Fine Blackboard';
+    font-family: 'IM Fell Pica';
     font-size: 7rem;
     position: relative;
     text-decoration: none;
@@ -21,7 +21,7 @@ h1 {
 .Nav {
   position: fixed;
   top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fine Blackboard';
   color: white;
   right: 10px;
 }
@@ -31,9 +31,8 @@ h1 {
     background-color: rgb(234, 212, 212);
     border: 1px solid #ccc;
     padding: 10px;
-
     z-index: 1000; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Fine Blackboard';
     font-size: 20px;
 }
 
@@ -49,16 +48,15 @@ h1 {
 
 .container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     z-index: 2;
     height: 100vh;
 }
 #container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    border: 1px solid rgb(233, 11, 11);
     overflow: hidden;
 }
 
@@ -111,9 +109,9 @@ footer {
   }
   
   .carousel img {
-    animation: scroll 20s linear infinite; 
+    animation: scroll 5s linear infinite; 
   }
-}
+
 /*FONTS*/
 @font-face {
     font-family: 'Fuggles';
@@ -130,30 +128,29 @@ footer {
     
 }
 @font-face {
-    font-family: 'Fiddums';
-    src: url(./fiddums-family/Fiddums\ Family.ttf);
-  }
+  font-family: 'IM Fell Pica';
+  src: url(./im-fell-dw-pica/IMFePIsc29P.ttf);
+  
+}
 
 /*IPHONE*/
-@media only screen 
-  and (min-device-width: 0) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 600px){
 
 
     body {
         margin: 0;
         padding: 0;
-        background: url('./aiboat2.png') no-repeat fixed;
+        background: url('./aiboat2.png')no-repeat fixed;
         background-size: contain;
-        background-color: rgb(136, 191, 213);
+        background-color: #05001a;
+        
     }
     
     h1 {
         color: greenyellow;
         text-align: center;
-        font-family: 'Fine Blackboard';
-        font-size: 100px;
+        font-family: 'IM Fell Pica';
+        font-size: 80px;
         position: relative;
         
     }
@@ -166,7 +163,7 @@ footer {
         width: 50vw;
         height: 25vh;
         z-index: 1000; 
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Fine Blackboard';
         font-size: 20px;
         overflow: scroll;
     }
@@ -191,7 +188,6 @@ footer {
         position: relative;
         width: 100%;
         height: 100vh;
-        border: 1px solid rgb(233, 11, 11);
         overflow: hidden;
     }
     
@@ -210,7 +206,6 @@ footer {
         left: 50px;
         top: 0px;
         
-        
     }
     footer {
         position: fixed;
@@ -219,28 +214,29 @@ footer {
         width: 100%;
         height: auto;
       }
-      
+ 
       .carousel {
         white-space: nowrap; 
         overflow: hidden; 
         bottom: 0;
+        
+        
       }
       .Nav {
         position: fixed;
         top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Fine Blackboard';
         color: white;
-        right: 10px;
     }
      
       .carousel img {
         width: auto; 
-        height: 80vh;
-        position: fixed;
+        height: 70vh;
+        position: absolute;
         bottom: 0;
         display: inline-block;
         vertical-align: middle; 
-        animation: scroll 20s linear infinite; 
+        animation: scroll 10s alternate-reverse infinite; 
       }
       
       
@@ -249,7 +245,7 @@ footer {
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-100%);
+          transform: translateX(-50%);
         }
       }
       
