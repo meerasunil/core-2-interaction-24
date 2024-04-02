@@ -49,7 +49,7 @@ h1 {
 }
 
 table {
-    margin: 50px;
+    
     filter: blur(.00rem);
     border-collapse: collapse;
 }

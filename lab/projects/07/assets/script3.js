@@ -72,19 +72,19 @@ function makeDraggable(item, dataItem) {
         popupBox.style.top = `${itemRect.top}px`;
     
   
-// Check if pop-up box exceeds viewport boundaries
+
 const popupBoxRect = popupBox.getBoundingClientRect();
 
-// Horizontal position adjustment
+
 if (popupBoxRect.right > viewportWidth) {
-    // Check if there's enough space on the left side, otherwise, move to the right side
+   
     popupBox.style.left = popupBoxRect.width > itemRect.left ? '0' : `${viewportWidth - popupBoxRect.width}px`;
 } else if (popupBoxRect.left < 0) {
-    // Check if there's enough space on the right side, otherwise, move to the left side
+    
     popupBox.style.left = `${itemRect.right}px`;
 }
 
-// Vertical position adjustment
+
 if (popupBoxRect.bottom > viewportHeight) {
     popupBox.style.top = `${viewportHeight - popupBoxRect.height}px`;
 } else if (popupBoxRect.top < 0) {
@@ -93,10 +93,10 @@ if (popupBoxRect.bottom > viewportHeight) {
 
     
       
-        // Display pop-up box
+       
         popupBox.style.display = 'block';
     
-        // Add event listener to body to hide pop-up box when clicked outside of it
+        
         const bodyClickHandler = (e) => {
             if (!popupBox.contains(e.target) && e.target !== item) {
                 hidePopup();
