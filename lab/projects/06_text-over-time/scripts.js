@@ -12,6 +12,6 @@ setInterval(() => {
 	
 	
 	
-	secondsHand.style.transform = `rotate(${ seconds * (360 / 60) }deg)`;
-
+	
+	secondsHand.style.transform = `skewX(${ seconds * (90 / 10) }deg)`;
 }, 1000)
