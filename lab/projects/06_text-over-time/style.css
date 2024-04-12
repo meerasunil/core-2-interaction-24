@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+}
+.HandContainer {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Hand--seconds {
+	background: rgb(208, 212, 253);
+    font: 20px;
+    
+}
