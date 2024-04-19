@@ -1,5 +1,12 @@
-url = 'https://www.alphavantage.co/query?function=NATURAL_GAS&interval=monthly&apikey=USDKKT1P0CIPBF4Y'
-r = requests.get(url)
-data = r.json()
+const latitude = 40.8337625
+const longitude = -73.8583547
+const url = `https://api.sunrisesunset.io/json?lat=${40.8337625}&lng=${-73.8583547}`
 
-print(data)
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+  .catch(error => console.error('Error:', error))
+

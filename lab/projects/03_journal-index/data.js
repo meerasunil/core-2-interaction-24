@@ -149,5 +149,8 @@ var data = [
     {
         imageUrl: 'assets/wire.png',
     },
+    {
+        imageUrl: 'assets/chandelier.png',
+    },
 ];
 
