@@ -36,7 +36,7 @@ function fetchData() {
         document.body.style.background = 'lightcoral';
       } else if (currentTimestamp >= solarNoonTime && currentTimestamp < goldenHourTime) {
         // Noon to golden hour - Pale yellow
-        document.body.style.background = 'papayawhip';
+        document.body.style.background = '#FEFFDE';
       } else if (currentTimestamp >= goldenHourTime && currentTimestamp < sunsetTime) {
         // Golden hour to sunset - Golden
         document.body.style.background = 'goldenrod';

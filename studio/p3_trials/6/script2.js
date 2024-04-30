@@ -1,16 +1,11 @@
-// Sunset/Sunrise API URL
-var latitude = 40.8337625;
+
+var latitude = 40.8337625; /*ny*/
 var longitude = -73.8583547;
 /*var latitude = 14.5995;
 var longitude = 120.9842;*/
 var URL = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`;
 
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to milliseconds
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to milliseconds
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to milliseconds
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to milliseconds
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to milliseconds
-// Function to parse time string in format HH:MM:SS AM/PM and convert it to Date object
+
 function parseTime(timeString) {
   const [hoursMinutesSeconds, period] = timeString.split(' ');
   const [hours, minutes, seconds] = hoursMinutesSeconds.split(':').map(Number);
@@ -25,30 +20,24 @@ function parseTime(timeString) {
   return parsedDate;
 }
 
-// Function to fetch data from the API
 function fetchData() {
   fetch(URL)
       .then(response => response.json())
       .then(data => {
           console.log('Data Results:', data);
-          // Extract relevant data
           const { dawn, sunrise, solar_noon, golden_hour, sunset, dusk } = data.results;
 
-          // Get current time
           const currentTime = new Date();
           const currentTimestamp = currentTime.getTime();
 
           console.log('Current Time:', currentTime);
 
-          // Convert sunrise, sunset, and other timestamps to milliseconds
           const sunriseTime = parseTime(sunrise);
           const sunsetTime = parseTime(sunset);
           const dawnTime = parseTime(dawn);
           const duskTime = parseTime(dusk);
           const goldenHourTime = parseTime(golden_hour);
-          // Calculate solar noon
-          const solarNoonTime = new Date((sunriseTime.getTime() + sunsetTime.getTime()) / 2);
-
+          const solarNoonTime = parseTime(solar_noon); 
 
           console.log('Parsed Sunrise Time:', new Date(sunriseTime));
           console.log('Parsed Sunset Time:', new Date(sunsetTime));
@@ -67,7 +56,7 @@ function fetchData() {
               document.body.style.background = 'lightcoral';
           } else if (currentTimestamp >= solarNoonTime && currentTimestamp < goldenHourTime) {
               // Noon to golden hour - Pale yellow
-              document.body.style.background = 'papayawhip';
+              document.body.style.background = '#FEFFDE';
           } else if (currentTimestamp >= goldenHourTime && currentTimestamp < sunsetTime) {
               // Golden hour to sunset - Golden
               document.body.style.background = 'goldenrod';
