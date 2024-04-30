@@ -24,21 +24,40 @@ html {
     color: white;
     text-align: center;
     padding: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
    
 }
-.draggable {
-    position: absolute;
-    cursor: grab;
-    z-index: 2; 
-}
-.container img { 
-    width: 20%;
-    z-index: 2;
-}
-.container {
-    position: relative;
-    width: 100%;
+
+.grid-item {
     overflow: hidden;
-    z-index: 2;
-    height: 100vh;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.grid-item video{
+    max-width: 250px;
+}
+.grid-item iframe{
+   width: 900px;
+   
+}
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
