@@ -1,4 +1,3 @@
-
 var latitude = 40.8337625; /*ny*/
 var longitude = -73.8583547;
 /*var latitude = 14.5995;

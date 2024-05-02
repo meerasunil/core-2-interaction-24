@@ -1,6 +1,13 @@
 
 body {
 	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
 p {
@@ -29,15 +36,54 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
 	font-family: 'Bonbon';
+	color: rgb(27, 13, 13);
+	background-color: rgb(199, 101, 238, .5);
+	text-align: center;
+	z-index: 2;
 }
 
 canvas {
 	display: block;
 	width: 100%;
 	height: 25%;
-	border: 2px solid rgb(225, 60, 60);
+	border: 2px solid rgb(0, 0, 0);
 }
 @font-face {
 	font-family: 'Bonbon';
 	src: url(./Bonbon-Regular.ttf);
 }
+#ground {
+	width: 100%;
+	height: 20%;
+	background-color: #327438; 
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	font-family: Arial Black;
+	text-align: center;
+	color: white;
+}
+
+.sunflowerone {
+	width: 200px;
+	position: relative;
+	translate: (-25%, 400px);
+	
+}
+.horizon {
+	position: absolute;
+	bottom: 50%; /* Position the horizon line at the center of the viewport */
+	width: 100%;
+	height: 1px; /* Adjust the height of the horizon line */
+	background-color: #ccc; /* Color of the horizon line */
+  }
+  
+  .sun {
+	position: absolute;
+	width: 50px; /* Adjust the size of the sun */
+	height: 50px; /* Adjust the size of the sun */
+	background-color: yellow; /* Color of the sun */
+	border-radius: 50%; /* Shape of the sun */
+	/* Additional styles for animation (e.g., transition, keyframes) */
+  }
+  

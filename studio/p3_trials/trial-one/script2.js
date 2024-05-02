@@ -1,24 +1,22 @@
-// Sunset/Sunrise API URL
+// js one//
 var latitude = 40.8337625;
 var longitude = -73.8583547;
 var URL = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`;
 
-// Function to fetch data from the API
 function fetchData() {
   fetch(URL)
     .then(response => response.json())
     .then(data => {
     console.log('Data Results:', data.results);
-      // Extract relevant data
+  
       const { dawn, sunrise, solar_noon, golden_hour, sunset, dusk } = data.results;
 
-      // Get current time
+
       const currentTime = new Date();
       const currentTimestamp = currentTime.getTime();
 
       console.log('Current Time:', currentTime);
 
-      // Convert sunrise, sunset, and other timestamps to milliseconds
       const sunriseTime = new Date(`2024-04-30 ${sunrise}`).getTime();
       const sunsetTime = new Date(`2024-04-30 ${sunset}`).getTime();
       const dawnTime = new Date(`2024-04-30 ${dawn}`).getTime();
@@ -26,7 +24,6 @@ function fetchData() {
       const goldenHourTime = new Date(`2024-04-30 ${golden_hour}`).getTime();
       const solarNoonTime = new Date(`2024-04-30 ${solar_noon}`).getTime();
 
-      // Change background color based on current time
       if (currentTimestamp >= dawnTime && currentTimestamp < sunriseTime) {
         // Dawn to sunrise - Blue/Yellow gradient
         // Change background color to blue/yellow gradient
@@ -52,9 +49,18 @@ function fetchData() {
     .catch(error => console.error('Error fetching data:', error));
 }
 
-// Call fetchData function to fetch data from API and change background color
 fetchData();
 
-// Update background color every minute
 setInterval(fetchData, 60000);
 
+/*JavaScript One
+ parses the sunrise, sunset, dawn, dusk, golden hour, and solar noon times 
+ using the Date constructor and specifying the date as '2024-04-30'
+ 
+JavaScript One directly extracts relevant data from data.results.
+
+JavaScript One compares each time interval separately, using direct timestamp comparisons.
+
+
+ 
+ */
