@@ -1,0 +1,91 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.Container {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	border: 2px solid white;
+	
+}
+#Container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	border: 2px solid white;
+}
+
+.Info {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	font-family: 'Bonbon';
+	color: rgb(27, 13, 13);
+	background-color: rgba(215, 154, 239, 0.3);
+	text-align: center;
+	z-index: 2;
+}
+.Info p{ 
+	font-size: 20px;
+}
+
+@font-face {
+	font-family: 'Bonbon';
+	src: url(./Bonbon-Regular.ttf);
+}
+#ground {
+	width: 100%;
+	height: 30%;
+	background-color: #327438; 
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	font-family: Arial Black;
+	text-align: center;
+	color: white;
+	
+}
+
+.tank {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 50%;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+}
+
+.flower {
+	width:100px;
+	
+}
+
+/*.horizon {
+	position: absolute;
+	bottom: 50%; 
+	width: 100%;
+	height: 1px; 
+	background-color: #ccc; 
+  */
+  
+  .sun {
+	position: absolute;
+	width: 50px; 
+	height: 50px; 
+	background-color: yellow; 
+	border-radius: 50%; 
+  }
+  
