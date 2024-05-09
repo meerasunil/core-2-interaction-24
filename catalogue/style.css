@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: scroll;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black; /* Just for visualization */
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+.subsection {
+    flex: 1;
+}
+
+.subsection img {
+    max-width: 300px;
+    height: auto;
+}
+
+.separator {
+    width: 0;
+    border-left: 2px solid black;
+    margin: 0 20px; /* Adjust the margin as needed for spacing */
+}
+h1{
+    font-family: arial black;
+}
