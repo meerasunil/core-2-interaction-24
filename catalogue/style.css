@@ -14,19 +14,21 @@ body, html {
     flex: 1;
     padding: 20px;
     text-align: center;
-    border: 1px solid black; /* Just for visualization */
     display: flex;
     height: fit-content;
     justify-content: space-around;
+    gap: 100px;
 }
 
 .subsection {
     flex: 1;
+    
 }
 
 .subsection img {
     max-width: 300px;
     height: auto;
+    border: 1px solid black;
 }
 
 .separator {
