@@ -18,6 +18,9 @@ h1 {
     
     
 }
+a {
+  color: inherit;
+}
 .Nav {
   position: fixed;
   top: 10px;
