@@ -50,23 +50,30 @@ function fetchData() {
               // Dawn to sunrise - Blue/Yellow gradient
               // Change background color to blue/yellow gradient
               document.body.style.background = 'linear-gradient(to bottom, blue, yellow)';
+              console.log('Background Color: Blue/Yellow Gradient');
           } else if (currentTimestamp >= sunriseTime && currentTimestamp < solarNoonTime) {
               // Sunrise to noon - Light orange
               document.body.style.background = 'lightcoral';
+              console.log('Background Color: lightcoral');
           } else if (currentTimestamp >= solarNoonTime && currentTimestamp < goldenHourTime) {
               // Noon to golden hour - Pale yellow
               document.body.style.background = '#FEFFDE';
+              console.log('Background Color: Pale Yellow (#FEFFDE');
           } else if (currentTimestamp >= goldenHourTime && currentTimestamp < sunsetTime) {
               // Golden hour to sunset - Golden
               document.body.style.background = 'goldenrod';
+              console.log('Background Color: Goldenrod');
           } else if (currentTimestamp >= sunsetTime || currentTimestamp < duskTime) {
             // Sunset to dusk - Golden/Blue gradient
             // Change background color to golden/blue gradient
             document.body.style.background = 'linear-gradient(to bottom, goldenrod, blue)';
+            console.log('Background Color: Goldenrod/Blue Gradient');
                 
           } else {
               // Dusk to dawn - Nighttime blue
               document.body.style.background = 'navy';
+              console.log('Background Color: Navy');
+
           }
       })
       .catch(error => console.error('Error fetching data:', error));

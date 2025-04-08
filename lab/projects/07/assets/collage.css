@@ -37,7 +37,7 @@ a {
     z-index: 1000; 
     width: fit-content;
     height: auto;
-    font-family: 'Fine Blackboard';
+    font-family: 'IM Fell Pica';
     font-size: 16px;
 }
 
@@ -137,7 +137,10 @@ footer {
   src: url(./im-fell-dw-pica/IMFePIsc29P.ttf);
   
 }
-
+@font-face {
+  font-family: 'OPTIMA';
+  src: url(./Optima.ttc);
+}
 /*IPHONE*/
 @media (max-width: 600px){
 

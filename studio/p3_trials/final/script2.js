@@ -1,7 +1,7 @@
 var latitude = 40.8337625; /*ny*/
 var longitude = -73.8583547;
-/*var latitude = 14.5995; manila 
-var longitude = 120.9842;*/
+/*var var latitude = 14.5995;  
+var longitude = 120.9842; */
 var URL = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`;
 
 // Function to parse time string and convert it to Date object

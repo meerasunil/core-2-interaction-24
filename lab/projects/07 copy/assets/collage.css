@@ -1,0 +1,256 @@
+/*DESKTOP*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./aiboat2.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'IM Fell Pica';
+    font-size: 7rem;
+    position: relative;
+    text-decoration: none;
+    
+    
+}
+.Nav {
+  position: fixed;
+  top: 10px;
+  font-family: 'Fine Blackboard';
+  color: white;
+  right: 10px;
+}
+
+.popup-box {
+    position: absolute;
+    background-color: rgb(234, 212, 212);
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000; 
+    width: fit-content;
+    height: auto;
+    font-family: 'Fine Blackboard';
+    font-size: 16px;
+}
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+    z-index: 2; 
+}
+.container img { 
+  
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 2;
+    height: 100vh;
+}
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.draggable {
+    position: absolute;
+    cursor: pointer;
+}
+
+#small-box {
+    position: absolute;
+    width: 400px;
+    height: 400px; 
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px dashed rgb(61, 227, 103);
+    left: 90px;
+    right: 90px;
+    margin: auto; 
+    top: 0;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .carousel {
+    white-space: nowrap; 
+    overflow: hidden; 
+  }
+  
+
+  .carousel img {
+    width: 100%; 
+    display: inline-block;
+    vertical-align: middle; 
+  }
+  
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel img {
+    animation: scroll 5s linear infinite; 
+  }
+
+/*FONTS*/
+@font-face {
+    font-family: 'Fuggles';
+    src: url(./Fuggles/Fuggles-Regular.ttf);
+    
+}
+@font-face {
+    font-family: 'Fiddums';
+    src: url(./fiddums-family/Fiddums\ Family.ttf);
+  }
+  @font-face {
+    font-family: 'Fine Blackboard';
+    src: url(./fine-blackboard/Fine\ Blackboard.ttf);
+    
+}
+@font-face {
+  font-family: 'IM Fell Pica';
+  src: url(./im-fell-dw-pica/IMFePIsc29P.ttf);
+  
+}
+
+/*IPHONE*/
+@media (max-width: 600px){
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('./aiboat2.png')no-repeat fixed;
+        background-size: contain;
+        background-color: #05001a;
+        
+    }
+    
+    h1 {
+        color: greenyellow;
+        text-align: center;
+        font-family: 'IM Fell Pica';
+        font-size: 80px;
+        position: relative;
+        
+    }
+    
+    .popup-box {
+        position: absolute;
+        background-color: rgb(234, 212, 212);
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 20vw;
+        height: 25vh;
+        z-index: 1000; 
+        font-family: 'Fine Blackboard';
+        font-size: 10px;
+        overflow: scroll;
+    }
+    
+    .draggable {
+        position: absolute;
+        cursor: grab;
+        z-index: 2; 
+    }
+    .container img { 
+        width: 50px;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        height: 100vh;
+    }
+    #container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .draggable {
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    #small-box {
+        position: absolute;
+        width: 75vw; 
+        height: 40vh; 
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px dashed rgb(61, 227, 103);
+        margin: auto; 
+        left: 50px;
+        top: 0px;
+        
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+ 
+      .carousel {
+        white-space: nowrap; 
+        overflow: hidden; 
+        bottom: 0;
+        
+        
+      }
+      .Nav {
+        position: fixed;
+        top: 10px;
+        font-family: 'Fine Blackboard';
+        color: white;
+    }
+     
+      .carousel img {
+        width: auto; 
+        height: 70vh;
+        position: absolute;
+        bottom: 0;
+        display: inline-block;
+        vertical-align: middle; 
+        animation: scroll 10s alternate-reverse infinite; 
+      }
+      
+      
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      
+      
+    
+    }
